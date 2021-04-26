@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스크롤 없는 100% 레이아웃</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .header {
+            height: 65px;
+            background-color: #00c73c;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            height: 100%;
+        }
+        .aside {
+            display: flex;
+            flex: none;
+            width: 400px;
+            background-color: #bfbab078;
+        }
+        .main{
+            display: flex;
+            flex: 1;
+            overflow: auto;
+            background-color: rgba(144, 128, 95, 0.47);
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="aside"></div>
+        <div class="main">
+            <div>a</div>
+        </div>
+
+    </div>
+</body>
+</html>

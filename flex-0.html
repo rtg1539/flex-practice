@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 기본</title>
+    <style>
+        .flex-row {
+            display: flex;
+        }
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-item {
+            flex: 1;
+            border: 1px solid #000;
+            overflow: auto;
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+<!--
+  flexbox는 복수의 자식 요소인 flex item과 그 상위 부모 요소인 flex container로 구성된다.
+
+  display: flex 속성이 적용된 요소는 flex container가 되고, flex container의 자식 요소는 flex item이 된다.
+  flex container와 flex item은 부모 요소와 자식 요소를 한 세트로 사용하는 ul과 li를 생각하면 쉽게 이해할 수 있다.
+
+  flex item은 주축(main axis)에 따라 정렬된다.
+  주축의 방향은 flex container의 flex-direction 속성으로 결정한다.
+  flex-direction 속성을 따로 지정하지 않으면 기본값인 row가 적용된다.
+  속성값 row는 주축의 방향을 왼쪽에서 오른쪽 방향으로 흐르게 한다.
+  flex-direction 속성의 또 다른 속성값인 column은 주축의 방향을 위에서 아래 방향으로 흐르게 한다.
+
+  부모속성
+  flex container 속성: flex-direction, flex-wrap, justify-content, align-items, align-content
+
+  자식속성
+  flex item 속성: flex, flex-grow, flex-shrink, flex-basis, order
+-->
+<h4>flex-row(default)</h4>
+<div class="flex-row">
+    <div class="flex-item">
+        a
+    </div>
+    <div class="flex-item">
+        a
+    </div>
+    <div class="flex-item">
+        a
+    </div>
+</div>
+
+<h4>flex-column</h4>
+<div class="flex-col">
+    <div class="flex-item">
+        a
+    </div>
+    <div class="flex-item">
+        a
+    </div>
+    <div class="flex-item">
+        a
+    </div>
+</div>
+</body>
+</html>
