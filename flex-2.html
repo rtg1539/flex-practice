@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>내비게이션 영역</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .flex-container {
+            display: flex;
+            max-width: 100%;
+        }
+
+        .flex-item {
+            flex: none; /* 크기 고정*/
+            margin: 0px 1px;
+            /* flex: 0 0 auto */
+        }
+
+        .flex-item-gnb {
+            margin-left: auto;
+        }
+
+        .border {
+            border: 1px solid #000;
+        }
+
+        .p-1 {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item border p-1">logo</div>
+    <div class="flex-item border p-1">search</div>
+    <div class="flex-item-gnb border p-1">gnb</div>
+    <!--<div class="flex-item border p-1">s</div>-->
+</div>
+
+<div class="flex-container">
+    <div class="border" style="flex-grow: inherit;flex-shrink: inherit; flex-basis: auto">oijwoejigowiejgoij</div>
+    <div class="border" style="flex-grow: inherit;flex-shrink: inherit; flex-basis: auto">oijwoejigowiejgoij</div>
+</div>
+
+<div class="flex-container">
+    <div class="border" style="flex: 1 1 auto">oijwoejigowiejgoij</div>
+    <div class="border" style="flex: 1 1 auto">oijwoejigowiejgoij</div>
+</div>
+</body>
+</html>
